@@ -8,7 +8,34 @@
     <title>Calculator</title>
 </head>
 <body>
-    
+    <h1>Calculator</h1>
+
+    <form action="" method="get" class="form">
+        <div class="form">
+            <label for="firstNumber">First number: </label>
+            <input type="text" name="firstNumber" id="firstNumber" required>
+        </div>
+        <div class="form">
+            <label for="operator">Operation: </label>
+            <div>
+                <input type="radio" id="addition" name="operation" value="+" checked="checked">
+                <label for="addition">+</label>
+                <input type="radio" id="subtraction" name="operation" value="-">
+                <label for="subtraction">-</label>
+                <input type="radio" id="multiplication" name="operation" value="x">
+                <label for="multiplication">x</label>
+                <input type="radio" id="division" name="operation" value="/">
+                <label for="division">/</label>
+            </div>
+        </div>
+        <div class="form">
+            <label for="secondNumber">Second number: </label>
+            <input type="text" name="secondNumber" id="secondNumber" required>
+        </div>
+        <div>
+            <input type="submit" value="Calculate">
+        </div>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>
