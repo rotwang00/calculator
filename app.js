@@ -97,6 +97,11 @@ document.getElementById("=").addEventListener('click', function (event) {
     updateDisplay();
 });
 
+document.getElementById("clear").addEventListener('click', function (event) {
+    equation = "";
+    updateDisplay();
+});
+
 function evaluate() {
     let values = equation.split(' ');
     x = parseInt(values[0]);
@@ -121,28 +126,3 @@ function evaluate() {
     equation += result;
     return;
 }
-
-
-// function calc() {
-//     x = parseInt(document.querySelector("#firstNumber").value);
-//     operator = document.querySelector("#operator").value;
-//     y = parseInt(document.querySelector("#secondNumber").value);
-//     alert("test");
-//     switch (operator) {
-//         case '+':
-//             calculate = add(x, y);
-//             break;
-//         case "-":
-//             calculate = subtract(x, y);
-//             break;
-//         case "*":
-//             calculate = multiply(x, y);
-//             alert("In multiplication");
-//             break;
-//         case "/":
-//             calculate = divide(x, y);
-//             break;
-//     }
-//     alert(`${x} ${operator} ${y} = ${calculate}`);
-// };
-
