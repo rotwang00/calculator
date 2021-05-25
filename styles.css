@@ -20,6 +20,8 @@ body {
   }
   
   .container {
+    margin: 0 auto;
+    margin-top: 120px;
     width: 300px;
     height: 300px;
     display: grid;
@@ -33,8 +35,9 @@ body {
     grid-area: display;
     justify-content: right;
     align-content: center;
+    margin-bottom: 4px;
     width: 100%;
-    border: 1px solid black;
+    border: 4px solid #b6c9f0;;
     font-family: monospace;
     font-size: 24px;
   }
@@ -54,5 +57,11 @@ body {
   button {
       width: 100%;
       height: 100%;
+      background-color: #b6c9f0;
+      border: 1px solid #ffffff;
+      font-size: 2em;
+      align-content: center;
+      justify-content: center;
+      display: grid;
   }
   

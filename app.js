@@ -18,7 +18,7 @@ function divide (x, y) {
 }
 
 function updateDisplay() {
-    document.getElementById("log").innerHTML = equation;
+    document.getElementById("display").innerHTML = equation;
 };
 
 document.getElementById("1").addEventListener('click', function (event) {
